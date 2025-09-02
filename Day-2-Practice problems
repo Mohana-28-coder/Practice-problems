@@ -111,58 +111,34 @@ public class cond1
 }
 
 
-******** TRY to print 
-a-z 
-z-a
-1-n even nos
-
-
-
-********************N-N********************
-import java.util.Scanner;
-public class cond1
+**z-a**
+public class hello
 {
 	public static void main(String[] args) {
-	    Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        for( int i=1;i<=n;i++){
-        for( int j=1;j<=n;j++)
-        System.out.print("*");
-        System.out.println();
-        }
+	   for(char i='z';i>='a';i--)
+        System.out.print(i+" ");
     }
 }
 
-***********Left Traingle
-
-import java.util.Scanner;
-public class cond1
+**a-z**
+public class hello
 {
 	public static void main(String[] args) {
-	    Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        for( int row=1;row<=n;row++){
-        for( int col=1;col<=row;col++)
-        System.out.print("*");
-        System.out.println();
-        }
+        for(char i='a';i<='z';i++)
+        System.out.print(i+" ");
     }
 }
-
-***********Right Traingle
-
+**1-n even numbers**
 import java.util.Scanner;
-public class cond1
+public class hello
 {
 	public static void main(String[] args) {
-	    Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        for( int row=1;row<=n;row++){
-        for( int col=1;col<=n-row;col++)
-        System.out.print(" ");
-         for( int col=1;col<=row;col++)
-        System.out.print("*");
-        System.out.println();
+	   Scanner scan = new Scanner(System.in);
+       int num=scan.nextInt();
+       for(int i=1;i<=num;i++){
+        if(i%2==0){
+          System.out.println(i);
         }
-    }
+       }
+  } 
 }
