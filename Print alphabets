@@ -1,0 +1,14 @@
+public class hello {
+    public static void main(String[] args) {
+        // a-z
+        for (char i = 'a'; i <= 'z'; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        // z-a
+        for (char i = 'z'; i >= 'a'; i--) {
+            System.out.print(i + " ");
+        }
+    }
+}
